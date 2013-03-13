@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Management.Automation;
@@ -24,8 +24,12 @@ namespace System.Management.Automation.Language
             get
             {
                 foreach (var item in this.NestedExpressions) yield return item;
-                foreach (var item in base.Children) yield return item;
+                foreach (var item in privateGetChildren()) yield return item;
             }
         }
+
+        // Method call works around a Mono C# compiler crash
+        [System.Diagnostics.DebuggerStepThrough]
+        private IEnumerable<Ast> privateGetChildren() { return base.Children; }
     }
 }
