@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Cmdlets\GetCommandTests.cs" />
     <Compile Include="Cmdlets\NewObjectCommandTests.cs" />
+    <Compile Include="Extensions\NUnitSpecificationExtensions.cs" />
     <Compile Include="LiteralsTests.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -58,7 +59,6 @@
     <Compile Include="TestHostUserInterface.cs" />
     <Compile Include="Tests.cs" />
     <Compile Include="Pash.System.Management\PathTests.cs" />
-    <Compile Include="TestHelpers\NUnitSpecificationExtensions.cs" />
     <Compile Include="FIleSystemTests\FileSystemTestBase.cs" />
     <Compile Include="FIleSystemTests\FileSystemTestBaseTests.cs" />
     <Compile Include="FIleSystemTests\FileSystemNavigationTests.cs" />
@@ -94,7 +94,7 @@
   -->
   <ItemGroup>
     <Folder Include="Pash.System.Management\" />
-    <Folder Include="TestHelpers\" />
+    <Folder Include="Extensions\" />
     <Folder Include="FIleSystemTests\" />
   </ItemGroup>
 </Project>
