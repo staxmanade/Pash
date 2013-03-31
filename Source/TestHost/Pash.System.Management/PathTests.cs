@@ -1,6 +1,7 @@
 using System;
 using NUnit.Framework;
 using System.Management;
+using Extensions.NUnitSpecification;
 
 namespace TestHost
 {
